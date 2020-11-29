@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs")-%>
+<h1>Home
+    <form action="/compose" class="composeButton">
+        <button type="submit" class="btn btn-danger">Compose</button>
+    </form>
+</h1>
+
+<p><b><%= homeContent %></b> </p>
+<% for(var i in posts) {%>
+<hr />
+<h1><%=posts[i].title %></h1>
+<p><b><%=posts[i].postcontent.substring(0,100)+" ..."%></b>
+    <a href="/posts/<%=posts[i].title%>">Read more</a></p>
+
+<% }%>
+
+<%- include("partials/footer.ejs")-%>
