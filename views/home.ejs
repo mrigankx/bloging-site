@@ -9,7 +9,7 @@
 <% for(var i in posts) {%>
 <hr />
 <h1><%=posts[i].title %></h1>
-<p><b><%=posts[i].postcontent.substring(0,100)+" ..."%></b>
+<p><b><%=posts[i].content.substring(0,100)+" ..."%></b>
     <a href="/posts/<%=posts[i].title%>">Read more</a></p>
 
 <% }%>

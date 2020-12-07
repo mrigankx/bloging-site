@@ -37,3 +37,7 @@
 .composeButton {
   float: right;
 }
+
+.post {
+  word-wrap: break-word;
+}
